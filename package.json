@@ -1,5 +1,5 @@
 {
-  "name": "pretapreact",
+  "name": "pret-a-preact",
   "version": "0.1.0",
   "description": "Webpack2 boilerplate for building SPA / PWA / offline front-end apps with preact and styled-jsx.",
   "scripts": {

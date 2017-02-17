@@ -41,8 +41,6 @@ module.exports = isProd => {
       })
     );
   } else {
-
-    console.log('devvvv!!!!')
     plugins.push(
       new webpack.HotModuleReplacementPlugin(),
       new webpack.NamedModulesPlugin(),
