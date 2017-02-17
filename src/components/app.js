@@ -36,7 +36,7 @@ export default class App extends Component {
         `}</style>
         <header>
           <div>
-            <h1>Prêt-à-Preact 🛍️ ⚛️</h1>
+            <h1>Prêt-à-Preact 🛍️</h1>
             <p>Webpack2 boilerplate for building SPA / PWA / offline front-end apps with <a href="https://github.com/developit/preact">preact</a> & <a href="https://github.com/zeit/styled-jsx">styled-jsx</a></p>
           </div>
         </header>
