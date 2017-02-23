@@ -1,4 +1,4 @@
 # Prêt-à-Preact
-> 🛍️  [preact](https://github.com/developit/preact) & [glamor](https://github.com/threepointone/glamor) boilerplate powered by webpack2.
+> 🛍️  [Preact](https://github.com/developit/preact) & [Glamor](https://github.com/threepointone/glamor) boilerplate powered by Webpack2.
 
 [demo](https://pret-a-preact.now.sh)

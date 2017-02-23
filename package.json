@@ -1,7 +1,7 @@
 {
   "name": "pret-a-preact",
   "version": "0.1.0",
-  "description": "Webpack2 boilerplate for building SPA / PWA / offline front-end apps with preact and styled-jsx.",
+  "description": "Preact & Glamor boilerplate powered by Webpack2",
   "scripts": {
     "build": "webpack --env.production --config ./config/webpack",
     "start": "webpack-dashboard --minimal -- webpack-dev-server --config config/webpack",
