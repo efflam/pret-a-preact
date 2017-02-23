@@ -15,6 +15,7 @@ import zIndex from './z-index';
 import font from './font';
 export default config => ({
   noDeco: {textDecoration: 'none'},
+  underline: {textDecoration: 'underline'},
   ...reset,
   ...background,
   ...size,

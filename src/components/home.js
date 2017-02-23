@@ -1,39 +1,42 @@
 import { h, Component } from "preact";
 import { css } from "glamor";
 import sheet from "../sheet";
-import Logo from "./logo";
-import ProjectList from "./project-list";
+
+const link = css(sheet.white, sheet.noDeco, {
+  ":hover": [sheet.underline]
+});
 
 const root = css(
-  sheet.fixed,
-  sheet.top,
-  sheet.left,
-  sheet.right,
-  sheet.bottom,
-  sheet.fullHeight
+  sheet.fullViewport,
+  sheet.flex,
+  sheet.alignCenter,
+  sheet.justifyCenter,
+  sheet.bgBlack,
+  sheet.silver,
+  sheet.textCenter,
+  { " a": link }
 );
-const nav = css(sheet.fixed, sheet.top, sheet.pr, sheet.z3);
-const leftNav = css(nav, sheet.left);
-const rightNav = css(nav, sheet.right);
-const profile = css(sheet.noDeco, sheet.inherit, sheet.f3r);
-const main = css(sheet.fullHeight, { overflow: "hidden" });
+
+const title = css(sheet.white);
 
 class Home extends Component {
-  render({ disabled }, state, { projects }) {
+  render() {
     return (
       <div {...root}>
-        <nav {...leftNav}>
-          <Logo />
-        </nav>
-        <nav {...rightNav}>
-          <a href="/profile" {...profile}>Link</a>
-          <a href="/playground" {...profile}>Playground</a>
-        </nav>
-        <main {...main}>
-          {projects
-            ? <ProjectList projects={projects} disabled={disabled} />
-            : null}
-        </main>
+        <header>
+          <div>
+            <h1 {...title}>Prêt-à-Preact 🛍️</h1>
+            <p>
+              <a href="https://github.com/developit/preact">Preact</a>
+              {" "}&{" "}
+              <a href="https://github.com/threepointone/glamor">Glamor</a>
+              {" "}boilerplate powered by webpack2. (
+              <a href="https://github.com/efflam/pret-a-preact">github</a>
+              )
+            </p>
+            <p />
+          </div>
+        </header>
       </div>
     );
   }
