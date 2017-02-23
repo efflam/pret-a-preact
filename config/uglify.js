@@ -11,6 +11,7 @@ module.exports = {
 		dead_code: 1,
 		if_return: 1,
 		join_vars: 1,
-		evaluate: 1
+		evaluate: 1,
+		drop_console: 1
 	}
 }

@@ -4,7 +4,6 @@ module.exports = {
 		'stage-2'
 	],
 	plugins: [
-		"styled-jsx/babel",
 		['transform-react-jsx', {pragma: 'h'}]
 	]
 };

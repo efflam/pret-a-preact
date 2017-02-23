@@ -15,7 +15,14 @@ module.exports = isProd => {
   const plugins = [
     new Clean(["build"], { root }),
     new Copy([{ context: "src/static/", from: "**/*.*" }]),
-    new webpack.optimize.CommonsChunkPlugin({ name: "vendor" }),
+    new webpack.optimize.CommonsChunkPlugin({
+      name: "vendor",
+      minChunks: module => {
+        return module.context &&
+          module.context.indexOf("node_modules") !== -1 ||
+          module.context.indexOf("src/lib") !== -1;
+      }
+    }),
     new webpack.DefinePlugin({
       "process.env.NODE_ENV": JSON.stringify(
         isProd ? "production" : "development"

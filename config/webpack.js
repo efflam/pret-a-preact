@@ -1,14 +1,12 @@
 const webpack = require("webpack");
 const path = require("path");
 const plugins = require("./plugins");
-const vendors = require("./vendors");
 
 module.exports = env => {
   const isProd = env && env.production;
   return {
     entry: {
-      app: "./src",
-      vendor: vendors
+      app: "./src"
     },
     output: {
       path: path.join(__dirname, "../build"),
@@ -16,9 +14,7 @@ module.exports = env => {
       publicPath: "/"
     },
     resolve: {
-      alias: {
-        react: "preact"
-      }
+      alias: {}
     },
     module: {
       rules: [

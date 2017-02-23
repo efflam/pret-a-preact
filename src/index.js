@@ -4,7 +4,7 @@ let root;
 
 function init() {
   let App = require("./components/app").default;
-  root = render(<App />, document.getElementById('root'), root);
+  root = render(<App />, document.body, document.getElementById('root'));
 }
 init();
 
