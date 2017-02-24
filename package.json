@@ -5,7 +5,7 @@
   "scripts": {
     "build": "webpack --env.production --config ./config/webpack",
     "start": "webpack-dashboard --minimal -- webpack-dev-server --config config/webpack",
-    "deploy": "surge --domain julieninaparis.surge.sh build"
+    "deploy": "surge build"
   },
   "author": "Efflam DANIEL <efflam.daniel@gmail.com>",
   "license": "MIT",
