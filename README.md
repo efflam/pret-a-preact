@@ -1,2 +1,2 @@
 # Prêt-à-Preact
-> 🛍️  [Preact](https://github.com/developit/preact) & [Glamor](https://github.com/threepointone/glamor) boilerplate powered by Webpack2.
+> 🛍️  [Preact](https://github.com/developit/preact) & [Fela](https://github.com/rofrischmann/fela/) boilerplate powered by Webpack2.

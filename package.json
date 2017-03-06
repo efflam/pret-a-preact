@@ -1,7 +1,7 @@
 {
   "name": "pret-a-preact",
   "version": "0.1.0",
-  "description": "Preact & Glamor boilerplate powered by Webpack2",
+  "description": "Preact & Fela boilerplate powered by Webpack2",
   "scripts": {
     "build": "webpack --env.production --config ./config/webpack",
     "start": "webpack-dashboard --minimal -- webpack-dev-server --config config/webpack",
@@ -25,8 +25,8 @@
     "webpack-dev-server": "^2.3.0"
   },
   "dependencies": {
-    "glamor": "^2.20.23",
     "preact": "^7.2.0",
-    "preact-router": "^2.4.1"
+    "preact-router": "^2.4.1",
+    "pret-a-porter": "^1.0.4"
   }
 }
