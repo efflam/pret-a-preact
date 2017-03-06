@@ -19,8 +19,7 @@ module.exports = isProd => {
       name: "vendor",
       minChunks: module => {
         return module.context &&
-          module.context.indexOf("node_modules") !== -1 ||
-          module.context.indexOf("src/lib") !== -1;
+          module.context.indexOf("node_modules") !== -1
       }
     }),
     new webpack.DefinePlugin({

@@ -1,5 +1,5 @@
 import { h, Component } from "preact";
-import { Root, Box } from "pret-a-porter";
+import { Root, Box, Baseline } from "pret-a-porter";
 import Router from "preact-router";
 import Home from "./home";
 
@@ -11,6 +11,7 @@ export default class App extends Component {
           <Router>
             <Home path="/" />
           </Router>
+          <Baseline color={"white"}/>
         </Box>
       </Root>
     );

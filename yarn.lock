@@ -2977,9 +2977,9 @@ preserve@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
 
-pret-a-porter@^1.0.4:
-  version "1.0.4"
-  resolved "https://registry.yarnpkg.com/pret-a-porter/-/pret-a-porter-1.0.4.tgz#2c8c3361056c76491bf99c16cc646b9d8667d345"
+pret-a-porter@^1.0.5:
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/pret-a-porter/-/pret-a-porter-1.0.5.tgz#7fde9da80a033e5aee64b004ab0082fcb75bf56e"
   dependencies:
     fela "^4.2.6"
     fela-dom "^4.2.6"
