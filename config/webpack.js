@@ -20,8 +20,8 @@ module.exports = env => {
       rules: [
         {
           test: /\.jsx?/i,
-          loader: "babel-loader",
-          // exclude: /node_modules/
+          loader: "babel-loader"
+          exclude: /node_modules/
         }
       ]
     },
