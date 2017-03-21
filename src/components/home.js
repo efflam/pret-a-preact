@@ -10,7 +10,7 @@ class Home extends Component {
         color="silver"
         padding={[1, 3, 4]}
       >
-        <Box as="h1" size={[2, 3, 6]} margin={0} marginBottom={1} color="white">
+        <Box as="h1" size={[2, 3, 4]} marginBottom={1} color="white">
           Prêt-à-Preact 🛍️
         </Box>
         <Box

@@ -5,7 +5,7 @@ const Dashboard = require("webpack-dashboard/plugin");
 const Clean = require("clean-webpack-plugin");
 const Copy = require("copy-webpack-plugin");
 const Html = require("html-webpack-plugin");
-
+const BundleAnalyzer = require("webpack-bundle-analyzer").BundleAnalyzerPlugin;
 const uglify = require("./uglify");
 const babel = require("./babel");
 
@@ -18,8 +18,7 @@ module.exports = isProd => {
     new webpack.optimize.CommonsChunkPlugin({
       name: "vendor",
       minChunks: module => {
-        return module.context &&
-          module.context.indexOf("node_modules") !== -1
+        return module.context && module.context.indexOf("node_modules") !== -1;
       }
     }),
     new webpack.DefinePlugin({
@@ -44,13 +43,13 @@ module.exports = isProd => {
         dontCacheBustUrlsMatching: /./,
         navigateFallback: "index.html",
         staticFileGlobsIgnorePatterns: [/\.map$/]
-      })
+      }),
+      new BundleAnalyzer()
     );
   } else {
     plugins.push(
       new webpack.HotModuleReplacementPlugin(),
-      new webpack.NamedModulesPlugin(),
-      new Dashboard()
+      new webpack.NamedModulesPlugin()
     );
   }
 

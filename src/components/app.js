@@ -7,11 +7,11 @@ export default class App extends Component {
   render(pros, { url }) {
     return (
       <Root>
-        <Box>
+        <Box position="relative">
           <Router>
             <Home path="/" />
           </Router>
-          <Baseline color={"white"}/>
+          <Baseline color={"white"} opacity={1} />
         </Box>
       </Root>
     );
