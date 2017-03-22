@@ -3,7 +3,7 @@ import { h, render } from "preact";
 let root;
 
 function init() {
-  let App = require("./components/app").default;
+  let App = require("./app").default;
   root = render(<App />, document.body, document.getElementById('root'));
 }
 init();
@@ -16,7 +16,7 @@ if (process.env.NODE_ENV === "production") {
   require("preact/devtools");
   if (module.hot) {
     module.hot.accept(
-      "./components/app",
+      "./app",
       () => window.requestAnimationFrame(() => {
         init();
       })
