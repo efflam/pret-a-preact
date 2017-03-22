@@ -44,7 +44,9 @@ module.exports = isProd => {
         navigateFallback: "index.html",
         staticFileGlobsIgnorePatterns: [/\.map$/]
       }),
-      new BundleAnalyzer()
+      new BundleAnalyzer({
+        analyzerMode: "static"
+      })
     );
   } else {
     plugins.push(
