@@ -1838,20 +1838,9 @@ fela-dom@^4.3.1:
   version "4.3.1"
   resolved "https://registry.yarnpkg.com/fela-dom/-/fela-dom-4.3.1.tgz#97f02f712a4d886a11285c8bd7af76452fd1724a"
 
-fela-plugin-named-media-query@^4.2.6:
-  version "4.2.6"
-  resolved "https://registry.yarnpkg.com/fela-plugin-named-media-query/-/fela-plugin-named-media-query-4.2.6.tgz#17ea7435a998c4b54d3403a97f75d94ade005150"
-
 fela-plugin-named-media-query@^4.3.1:
   version "4.3.1"
   resolved "https://registry.yarnpkg.com/fela-plugin-named-media-query/-/fela-plugin-named-media-query-4.3.1.tgz#561ad404b4fbc149b5edd87ca2d588b40d39ea66"
-
-fela-preset-web@^4.2.6:
-  version "4.2.6"
-  resolved "https://registry.yarnpkg.com/fela-preset-web/-/fela-preset-web-4.2.6.tgz#203604b79cf71d7e6ea8ef9041f8195dee3e3e12"
-  dependencies:
-    inline-style-prefixer "^3.0.0"
-    unitless-css-property "1.0.2"
 
 fela-preset-web@^4.3.1:
   version "4.3.1"
@@ -1859,12 +1848,6 @@ fela-preset-web@^4.3.1:
   dependencies:
     css-in-js-utils "^1.0.3"
     inline-style-prefixer "^3.0.0"
-
-fela@^4.2.6:
-  version "4.2.6"
-  resolved "https://registry.yarnpkg.com/fela/-/fela-4.2.6.tgz#093605c789fde268657859dc422234d3cf65afa9"
-  dependencies:
-    hyphenate-style-name "1.0.1"
 
 fela@^4.3.1:
   version "4.3.1"
@@ -2278,10 +2261,6 @@ http-signature@~1.1.0:
 https-browserify@0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/https-browserify/-/https-browserify-0.0.1.tgz#3f91365cabe60b77ed0ebba24b454e3e09d95a82"
-
-hyphenate-style-name@1.0.1, hyphenate-style-name@^1.0.1:
-  version "1.0.1"
-  resolved "https://registry.yarnpkg.com/hyphenate-style-name/-/hyphenate-style-name-1.0.1.tgz#bc49b9446e02b4570641afdd29c1ce7609d1b9cc"
 
 hyphenate-style-name@^1.0.2:
   version "1.0.2"
@@ -3167,9 +3146,9 @@ preserve@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/preserve/-/preserve-0.2.0.tgz#815ed1f6ebc65926f865b310c0713bcb3315ce4b"
 
-pret-a-porter@^2.0.19:
-  version "2.0.19"
-  resolved "https://registry.yarnpkg.com/pret-a-porter/-/pret-a-porter-2.0.19.tgz#87687f25168f269560ea5d86dafba97e234538a4"
+pret-a-porter@^2.0.21:
+  version "2.0.21"
+  resolved "https://registry.yarnpkg.com/pret-a-porter/-/pret-a-porter-2.0.21.tgz#4a01fd2cf73d7243f0bcb7aba25ef5109e50c348"
   dependencies:
     fela "^4.3.1"
     fela-dom "^4.3.1"
@@ -3908,12 +3887,6 @@ uid-number@^0.0.6:
 ultron@1.0.x:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/ultron/-/ultron-1.0.2.tgz#ace116ab557cd197386a4e88f4685378c8b2e4fa"
-
-unitless-css-property@1.0.2:
-  version "1.0.2"
-  resolved "https://registry.yarnpkg.com/unitless-css-property/-/unitless-css-property-1.0.2.tgz#dd4b666172fba241fcf50b6b31aee126700b170a"
-  dependencies:
-    hyphenate-style-name "^1.0.1"
 
 unpipe@~1.0.0:
   version "1.0.0"
